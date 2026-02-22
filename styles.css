@@ -25,4 +25,26 @@ html{
 body{
     background-color: var(--escuro);
     color: var(--claro);
+    
+
+}
+
+.navegacao{
+ position: fixed;
+ top:0;
+ background-color:rgba(15, 23, 42,) ;
+ width:100%;
+ z-index:100;
+ padding: 1.5rem  ;
+
+}
+.menu{
+
+
+    
+}
+.menu-link{
+ 
+
+
 }

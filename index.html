@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="particulas"></div>
+    <div class="particulas"></div>
     <nav class="navegacao">
         <ul class="menu">
             <li>
@@ -36,8 +36,9 @@
     <section id="sobre" class="sobre">
         <h2 class=" sobre-titulo">Sobre mim</h2>
         <div class="sobre-caixa">
-            <p class="sobre-paragrafo">Meu nome é Gabriel Barbosa, tenho 17 anos e sou desenvolvedor full-stack. Atuo
-                com tecnologias como HTML, CSS, JavaScript, React e Node.js.</p>
+            <p class="sobre-paragrafo">Meu nome é Gabriel Barbosa, tenho 17 anos e sou desenvolvedor full-stack apaixonado por tecnologia. Desenvolvo aplicações web completas, atuando tanto no front-end quanto no back-end.
+
+Tenho experiência com HTML, CSS e JavaScript na criação de interfaces responsivas e organizadas, além de utilizar Python e Java no desenvolvimento de sistemas e APIs. Estou sempre buscando evoluir minhas habilidades e participar de projetos que me desafiem e contribuam para meu crescimento profissional. </p>
         </div>
     </section>
     <section id="projetos" class="projetos">
@@ -48,8 +49,7 @@
                 <img src="/imagens/projeto1.png" alt="Projeto 1" class="projeto-imagem">
                 <div class="caixa-textos-projetos">
                     <h3 class="info-projetos">Jogo 2D</h3>
-                    <p class="paragrafo-projetos">Desenvolvi um site de portfólio pessoal usando HTML, CSS e JavaScript
-                        para mostrar meus projetos e habilidades.</p>
+                    <p class="paragrafo-projetos">Desenvolvi um jogo 2D usando Python e Pygame para demonstrar minhas habilidades em programação.</p>
                 </div>
             </div>
 
@@ -57,9 +57,7 @@
                 <img src="/imagens/projeto2.png" alt="Projeto 1" class="projeto-imagem">
                 <div class="caixa-textos-projetos">
                     <h3 class="info-projetos">Site R1$CO</h3>
-                    <p class="paragrafo-projetos">Desenvolvi um sistema de gerenciamento de tarefas usando React e
-                        Node.js para
-                        facilitar o controle de projetos.</p>
+                    <p class="paragrafo-projetos">Desenvolvi um site institucional para a empresa R1$CO usando HTML, CSS e JavaScript.</p>
                 </div>
             </div>
 
@@ -67,9 +65,7 @@
                 <img src="/imagens/projeto3.png" alt="Projeto 1" class="projeto-imagem">
                 <div class="caixa-textos-projetos">
                     <h3 class="info-projetos">Calculadora</h3>
-                    <p class="paragrafo-projetos">Desenvolvi uma aplicação de notas usando React e Node.js para permitir
-                        a criação e
-                        gerenciamento de anotações.</p>
+                    <p class="paragrafo-projetos">Desenvolvi uma calculadora simples usando HTML, CSS e JavaScript para demonstrar minhas habilidades em desenvolvimento front-end.</p>
                 </div>
             </div>
 
@@ -77,34 +73,35 @@
         <section id="contatos" class="contatos">
             <h2 class="contatos-titulo">Entre Em Contato</h2>
 
-            <form class="formulario-contatos" id="formulario" onsubmit="enviarWhats(event)" >
+            <form class="formulario-contatos" id="formulario" onsubmit="enviarWhats(event)">
 
                 <div class="grupo-form">
                     <input placeholder="Nome" class="campo-form" id="nome">
-                </div>  
-                <div class="grupo-form">  
-                    <textarea class="campo-form" placeholder="Digite sua mensagem aqui..." rows="5" id="mensagem"></textarea>
-                    
                 </div>
-                <button type="submit" class="botao-form">Enviar WhatsApp</button>    
+                <div class="grupo-form">
+                    <textarea class="campo-form" placeholder="Digite sua mensagem aqui..." rows="5"
+                        id="mensagem"></textarea>
+
+                </div>
+                <button type="submit" class="botao-form">Enviar WhatsApp</button>
             </form>
             </div class="grupo-form">
         </section>
         <script>
 
-                function enviarWhats(event) {
-                 event.preventDefault();
+            function enviarWhats(event) {
+                event.preventDefault();
 
-            const nome = document.getElementById('formulario');
-            const mensagem = document.getElementById('mensagem');
-            const telefone = '5585991683120'; 
+                const nome = document.getElementById('formulario');
+                const mensagem = document.getElementById('mensagem');
+                const telefone = '5585991683120';
 
 
-            const texto = `Olá, meu nome é ${nome.value},  ${mensagem.value}`;
-            const msgFormatada = encodeURIComponent(texto);
-            const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+                const texto = `Olá, meu nome é ${nome.value},  ${mensagem.value}`;
+                const msgFormatada = encodeURIComponent(texto);
+                const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
 
-            window.open(url, '_blank');
+                window.open(url, '_blank');
             };
         </script>
 </body>

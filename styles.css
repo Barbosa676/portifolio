@@ -266,3 +266,88 @@ nav, main, section {
     position: relative;
     z-index: 1;
 }
+
+.social-links {
+  text-align: center;
+  padding: 40px 20px;
+  background: var(--escuro); /* fundo escuro para combinar */
+  color: #fff;
+  border-color: var(--maisEscuro);
+  border-radius: 10px;
+}
+
+.social-links h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.link-btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.github {
+  background: linear-gradient(90deg, #333, #2e2e2e);
+  color: #fff;
+}
+
+.linkedin {
+  background: linear-gradient(90deg,var(--primaria), var(--secundaria));
+  color: #fff;
+}
+
+.link-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #2c005a, #302676);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* Animação do gradiente */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #00ffcc;
+}
+.footer-text {
+  background: linear-gradient(90deg, #ffcc00, #00b7ff, #ff00ff);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 6s infinite ease-in-out; /* mais rápido e suave */
+  font-weight: bold;
+}
+
+/* Animação do gradiente */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
